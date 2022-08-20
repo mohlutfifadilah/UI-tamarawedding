@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="relative w-full h-full pb-2">
+        <!-- <div class="hidden md:block">
+            <img class="absolute bg-cover bg-center w-full h-full inset-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Hero%2008.png" alt="" />
+        </div> -->
+        <nav class="lg:hidden relative z-50">
+            <div class="flex py-2 justify-between items-center px-4">
+                <div>
+                    <img src="Pastel Modern Minimalist Florist Logo(3) 1.jpg" alt="logo" />
+                </div>
+                <div class="visible flex items-center">
+                    <button id="open" onclick="MenuHandler(true)" class="focus:outline-none focus:ring-2 focus:ring-black">
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg2.svg" alt="menu" />
+                        </button>
+                    <ul id="list" class="hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-24">
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Home</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">About Us</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Pricing</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Resources</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Sign In</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="xl:hidden">
+                        <button id="close" class="hidden close-m-menu focus:ring-2 focus:ring-black focus:outline-none" onclick="MenuHandler(false)">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg3.svg" alt="close" />
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="f-f-l relative z-10">
+            <div class="relative z-10 mx-auto container hidden w-full px-4 xl:px-0 lg:flex justify-between items-center">
+                <div>
+                    <img class="h-18 w-56" src="Pastel Modern Minimalist Florist Logo(3) 1.jpg" alt="logo" />
+                </div>
+                <div class="flex items-center text-white text-base font-medium">
+                    <ul class="flex items-center pr-3 xl:pr-12">
+                        <li class="cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
+                            <a href="#" class="focus:outline-none focus:ring-2 focus:ring-white">Home</a>
+                        </li>
+                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
+                            <a href="store.html" class="focus:outline-none focus:ring-2 focus:ring-white active:opacity-100">Store</a>
+                        </li>
+                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] active hover:opacity-100 ease-in">
+                            <a href="package.html" class="focus:outline-none focus:ring-2 focus:ring-white">Package</a>
+                        </li>
+                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
+                            <a href="inspiration.html" class="focus:outline-none focus:ring-2 focus:ring-white">Inspiration</a>
+                        </li>
+                    </ul>
+                    <a class="px-6 py-3 bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="contact.html">
+                            Contact Now
+                            <img class="ml-4" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg5.svg" alt="arrow" />
+                        </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mx-auto md:mx-auto pb-8 pt-0 mt-0">
+        <nav class="rounded-md w-full ml-8">
+            <ol class="list-reset flex">
+                <li><a href="package.html" class="cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">Package</a></li>
+                <li><span class="text-gray-500 mx-2">/</span></li>
+                <li class="text-[#8F1F1F] active">Gold</li>
+            </ol>
+        </nav>
+        <div class="text-center">
+            <h1 class="text-4xl font-semibold text-[#8f1f1f] tracking-wide">
+                Package : Gold
+            </h1>
+            <p class="font-medium pt-1 mb-4">
+                Package
+            </p>
+        </div>
+        <div class="box-content h-full w-full bg-[#ebe1e1]">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="p-36 pt-4 pb-4">
+                    <p class="text-2xl text-[#8F1F1F] font-medium mt-4 mb-4">
+                        Dekorasi :
+                    </p>
+                    <p class="text-base"><strong>Note : Panggung menyediakan sendiri</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Dekorasi kamar pengantin</li>
+                        <li>Dekorasi pintu masuk</li>
+                        <li>Dekorasi siraman + photobooth</li>
+                        <li>Dekorasi pergola lorong</li>
+                        <li>Set meja kursi akad</li>
+                        <li>Bleketepe untuk siraman</li>
+                        <li>8 kotak amplop</li>
+                        <li>Umbul-umbul (bambu menyediakan sendiri)</li>
+                        <li>Sepasang kembar mayang</li>
+                    </ul>
+                </div>
+                <div></div>
+                <div></div>
+                <div>
+                    <p class="text-2xl text-[#8F1F1F] font-medium mt-4 mb-4">
+                        Busana :
+                    </p>
+                    <p class="text-base"><strong>Hari pertama(siraman) : </strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Ronce melati fresh</li>
+                        <li>Rias pengantin + baju siraman sepasang pengantin</li>
+                        <li>Rias + baju orang tua dan besan</li>
+                        <li>Rias + kebaya midodareni pengantin putri</li>
+                    </ul>
+                    <p class="text-base"><strong>Hari kedua(siraman) : </strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Ronce melati fresh untuk akad dan adat</li>
+                        <li>8 Rias sepasang pengantin ganti baju 3x (akad, adat, dan resepsi)</li>
+                        <li>Rias + baju 2 pasang orang tua dan besan</li>
+                        <li>Rias baju 4 manggolo</li>
+                        <li>Rias + baju 4 domas</li>
+                        <li>Rias + kebaya 4 jaga buku tamu</li>
+                        <li>Rias + kebaya 2 patah kecil (pengipas)</li>
+                    </ul>
+                </div>
+                <div class="p-36 pt-4 pb-4">
+                    <p class="text-2xl text-[#8F1F1F] font-medium mt-4 mb-4">
+                        Lainnya :
+                    </p>
+                    <p class="text-base"><strong>Acara : </strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>MC siraman, akad nikah, dan adat</li>
+                        <li>Cucuk lampah</li>
+                        <li>Serangkaian adat panggih</li>
+                        <li>& perlengkapan siraman + adat panggih (kecuali dawetan)</li>
+                    </ul>
+                    <p class="text-base"><strong>Dokumentasi : </strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Foto story book 2 hari acara (all file + flashdisk)</li>
+                        <li>Cetak album story</li>
+                        <li>Album magnetik</li>
+                        <li>Video wedding elip + teaser 2 hari acara</li>
+                    </ul>
+                    <p class="text-base"><strong>Bonus Spesial : </strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Henna White</li>
+                        <li>Buket bunga fresh</li>
+                        <li>82 buah buku tamu</li>
+                        <li>Softlens normal</li>
+                    </ul>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .top-100 {
+            animation: slideDown 0.5s ease-in-out;
+        }
+        
+        @keyframes slideDown {
+            0% {
+                top: -50%;
+            }
+            100% {
+                top: 0;
+            }
+        }
+        
+        * {
+            outline: none !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js "></script>
+    <script>
+        const MenuHandler = (flag) => {
+            if (flag) {
+                document.getElementById("list ").classList.add("top-100 ");
+                document.getElementById("list ").classList.remove("hidden ");
+                document.getElementById("close ").classList.remove("hidden ");
+                document.getElementById("open ").classList.add("hidden ");
+            } else {
+                document.getElementById("list ").classList.remove("top-100 ");
+                document.getElementById("list ").classList.add("hidden ");
+                document.getElementById("close ").classList.add("hidden ");
+                document.getElementById("open ").classList.remove("hidden ");
+            }
+        };
+    </script>
+</body>
+
+</html>
