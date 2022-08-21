@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="relative w-full h-full pb-2">
+        <!-- <div class="hidden md:block">
+            <img class="absolute bg-cover bg-center w-full h-full inset-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Hero%2008.png" alt="" />
+        </div> -->
+        <nav class="lg:hidden relative z-50">
+            <div class="flex py-2 justify-between items-center px-4">
+                <div>
+                    <img src="Pastel Modern Minimalist Florist Logo(3) 1.jpg" alt="logo" />
+                </div>
+                <div class="visible flex items-center">
+                    <button id="open" onclick="MenuHandler(true)" class="focus:outline-none focus:ring-2 focus:ring-black">
+                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg2.svg" alt="menu" />
+                        </button>
+                    <ul id="list" class="hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-24">
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Home</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">About Us</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Pricing</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Resources</span>
+                            </a>
+                        </li>
+                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
+                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
+                                <span class="font-bold">Sign In</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="xl:hidden">
+                        <button id="close" class="hidden close-m-menu focus:ring-2 focus:ring-black focus:outline-none" onclick="MenuHandler(false)">
+                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg3.svg" alt="close" />
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="f-f-l relative z-10">
+            <div class="relative z-10 mx-auto container hidden w-full px-4 xl:px-0 lg:flex justify-between items-center">
+                <div>
+                    <img class="h-18 w-56" src="Pastel Modern Minimalist Florist Logo(3) 1.jpg" alt="logo" />
+                </div>
+                <div class="flex items-center text-white text-base font-medium">
+                    <ul class="flex items-center pr-3 xl:pr-12">
+                        <li class="cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
+                            <a href="home.html" class="focus:outline-none focus:ring-2 focus:ring-white">Home</a>
+                        </li>
+                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] active hover:opacity-100 ease-in">
+                            <a href="store.html" class="cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">Store</a>
+                        </li>
+                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
+                            <a href="package.html" class="focus:outline-none focus:ring-2 focus:ring-white">Package</a>
+                        </li>
+                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
+                            <a href="inspiration.html" class="focus:outline-none focus:ring-2 focus:ring-white">Inspiration</a>
+                        </li>
+                    </ul>
+                    <a class="px-6 py-3 bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="contact.html">
+                            Contact Now
+                            <img class="ml-4" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg5.svg" alt="arrow" />
+                        </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mx-auto md:mx-auto mb-4 pt-0 mt-0">
+        <div class="text-center">
+            <h1 class="text-4xl font-semibold text-[#8f1f1f] tracking-wide">
+                Contact Us
+            </h1>
+            <p class="font-medium pt-1">
+                Tamara Wedding
+            </p>
+        </div>
+        <div class="box-content h-full w-full">
+            <div class="grid grid-cols-1 gap-6">
+                <div class="p-36 pt-4 pb-4 text-center">
+                    <p class="text-md font-base px-40 mb-8">
+                        Terimakasih telah menghubungi kami. Kami senang terhubung dengan anda!. Beritahu kami tentang apa yang bisa kami bantu. Jika anda tidak menerima tanggapan dalam waktu 24 jam, silahkan hubungi kami langsung email atau telepon.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="m-0 p-0">
+                            <h1 class="text-md font-bold bg-[#9b9090] rounded-full text-white">
+                                Kontak :
+                            </h1>
+                        </div>
+                        <div class="m-0 p-0">
+                            <h1 class="text-md font-bold bg-[#9b9090] rounded-full text-white">
+                                Lokasi :
+                            </h1>
+                        </div>
+                        <div class="m-0 p-0">
+                            <h1 class="text-md font-bold bg-[#9b9090] rounded-full text-white">
+                                Instagram :
+                            </h1>
+                        </div>
+                        <div class="m-0 p-0">
+                            <p class="text-md font-default">
+                                +628112629492 (admin)
+                            </p>
+                        </div>
+                        <div class="m-0 p-0">
+                            <p class="text-md font-default">
+                                Jl. Kertawibawa RT.03/RW.04 Dusun I, Pasir Kidul, Kec. Purwokerto Barat, Kabupaten Banyumas, Jawa Tengah, 53135.
+                            </p>
+                        </div>
+                        <div class="m-0 p-0">
+                            <p class="text-md font-default">
+                                Tamara Wedding
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#ebe1e1]">
+        <div class="container mx-auto md:mx-auto pt-3 pb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4872398723905!2d109.19959401469146!3d-7.411200675042614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e3b16798e8b%3A0x40bdd56fe957dad6!2sTamara%20Wedding%20Purwokerto%20(isnan_khan)!5e0!3m2!1sen!2sid!4v1661061889705!5m2!1sen!2sid"
+                width="1285" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <style>
+        .top-100 {
+            animation: slideDown 0.5s ease-in-out;
+        }
+        
+        @keyframes slideDown {
+            0% {
+                top: -50%;
+            }
+            100% {
+                top: 0;
+            }
+        }
+        
+        * {
+            outline: none !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js "></script>
+    <script>
+        const MenuHandler = (flag) => {
+            if (flag) {
+                document.getElementById("list ").classList.add("top-100 ");
+                document.getElementById("list ").classList.remove("hidden ");
+                document.getElementById("close ").classList.remove("hidden ");
+                document.getElementById("open ").classList.add("hidden ");
+            } else {
+                document.getElementById("list ").classList.remove("top-100 ");
+                document.getElementById("list ").classList.add("hidden ");
+                document.getElementById("close ").classList.add("hidden ");
+                document.getElementById("open ").classList.remove("hidden ");
+            }
+        };
+    </script>
+</body>
+
+</html>
