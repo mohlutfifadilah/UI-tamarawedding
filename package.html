@@ -1,283 +1,186 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
-    <style>
-        .pxx {
-            font-family: 'Katibeh';
-            font-size: 18px;
-        }
-        
-        p.px {
-            font-family: 'Katibeh';
-            font-size: 64px;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Jarallax CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/jarallax.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
 </head>
 
 <body>
-    <div class="relative w-full h-full pb-2">
-        <!-- <div class="hidden md:block">
-            <img class="absolute bg-cover bg-center w-full h-full inset-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Hero%2008.png" alt="" />
-        </div> -->
-        <nav class="lg:hidden relative z-50">
-            <div class="flex py-2 justify-between items-center px-4">
-                <div>
-                    <img src="Pastel Modern Minimalist Florist Logo(3) 1.jpg" alt="logo" />
-                </div>
-                <div class="visible flex items-center">
-                    <button id="open" onclick="MenuHandler(true)" class="focus:outline-none focus:ring-2 focus:ring-black">
-                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg2.svg" alt="menu" />
-                        </button>
-                    <ul id="list" class="hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-24">
-                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
-                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
-                                <span class="font-bold">Home</span>
-                            </a>
-                        </li>
-                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
-                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
-                                <span class="font-bold">About Us</span>
-                            </a>
-                        </li>
-                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
-                                <span class="font-bold">Pricing</span>
-                            </a>
-                        </li>
-                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
-                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
-                                <span class="font-bold">Resources</span>
-                            </a>
-                        </li>
-                        <li class="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none" onclick="dropdownHandler(this)">
-                            <a href="javascript: void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-black">
-                                <span class="font-bold">Sign In</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="xl:hidden">
-                        <button id="close" class="hidden close-m-menu focus:ring-2 focus:ring-black focus:outline-none" onclick="MenuHandler(false)">
-                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg3.svg" alt="close" />
-                            </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <nav class="f-f-l relative z-10">
-            <div class="relative z-10 mx-auto container hidden w-full px-4 xl:px-0 lg:flex justify-between items-center">
-                <div>
-                    <a href="index.html">
-                        <img class="h-18 w-56" src="Pastel Modern Minimalist Florist Logo(3) 1.jpg" alt="logo" />
-                    </a>
-                </div>
-                <div class="flex items-center text-white text-base font-medium">
-                    <ul class="flex items-center pr-3 xl:pr-12">
-                        <li class="cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
-                            <a href="home.html" class="focus:outline-none focus:ring-2 focus:ring-white">Home</a>
-                        </li>
-                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
-                            <a href="store.html" class="focus:outline-none focus:ring-2 focus:ring-white active:opacity-100">Store</a>
-                        </li>
-                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] active hover:opacity-100 ease-in">
-                            <a href="package.html" class="focus:outline-none focus:ring-2 focus:ring-white">Package</a>
-                        </li>
-                        <li class="pl-8 lg:pl-8 xl:pl-12 cursor-pointer text-[#8F1F1F] opacity-50 hover:opacity-90 ease-in">
-                            <a href="inspiration.html" class="focus:outline-none focus:ring-2 focus:ring-white">Inspiration</a>
-                        </li>
-                    </ul>
-                    <a class="px-6 py-3 bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="contact.html">
-                            Contact Now
-                            <img class="ml-4" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/large_typography_with_gradient_and_glass_effect_Svg5.svg" alt="arrow" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Pastel_Modern_Minimalist_Florist_Logo_3__1-removebg-preview.png" width="200" height="60" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link btn btn-primary btn-md">
+                                Contact now
                         </a>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="container mx-auto md:mx-auto mb-4 pt-0 mt-0">
-        <div class="text-center">
-            <p class="text-4xl font-semibold text-[#8f1f1f] tracking-wide px">
-                Package
-            </p>
-            <p class="font-medium pt-4 pxx">
-                Tamara Wedding
-            </p>
-        </div>
-        <div class="grid gap-x-8 gap-y-4 grid-cols-3 px-48 pb-20 pt-12 text-center">
-            <div>
-                <div class="box-content h-full w-full text-center bg-[#ebe1e1] py-3">
-                    <p class="text-lg font-medium mt-4">
-                        Gold
-                    </p>
-                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
-                    <p class="text-base my-8">
-                        Dekorasi <br> Rias + Busana <br> Acara <br> Dokumentasi
-                    </p>
-                    <a class="py-2 px-3 text-xs bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="detail-gold.html">
-                        Detail
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="box-content h-full w-full text-center bg-[#ebe1e1] py-3">
-                    <p class="text-lg font-medium mt-4">
-                        Platinum
-                    </p>
-                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
-                    <p class="text-base my-8">
-                        Dekorasi <br> Rias + Busana <br> Acara <br> Dokumentasi
-                    </p>
-                    <a class="py-2 px-3 text-xs bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="detail-platinum.html">
-                        Detail
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="box-content h-full w-full text-center bg-[#ebe1e1] py-3">
-                    <p class="text-lg font-medium mt-4">
-                        Silver
-                    </p>
-                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
-                    <p class="text-base my-8">
-                        Dekorasi <br> Rias + Busana <br> Acara <br> Dokumentasi
-                    </p>
-                    <a class="py-2 px-3 text-xs bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="detail-silver.html">
-                        Detail
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="box-content h-full w-full text-center bg-[#ebe1e1] py-3 mt-8">
-                    <p class="text-lg font-medium mt-4">
-                        Gedung
-                    </p>
-                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
-                    <p class="text-base my-8">
-                        Dekorasi <br> Rias + Busana <br> Acara <br> Dokumentasi
-                    </p>
-                    <a class="py-2 px-3 text-xs bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="detail-gedung.html">
-                        Detail
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="box-content h-full w-full text-center bg-[#ebe1e1] py-3 mt-8">
-                    <p class="text-lg font-medium mt-4">
-                        Tamara
-                    </p>
-                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
-                    <p class="text-base my-8">
-                        Dekorasi <br> Rias + Busana <br> Acara <br> Dokumentasi
-                    </p>
-                    <a class="py-2 px-3 text-xs bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="detail-tamara.html">
-                        Detail
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="box-content h-full w-full text-center bg-[#ebe1e1] py-3 mt-8">
-                    <p class="text-lg font-medium mt-4">
-                        Make Up
-                    </p>
-                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
-                    <p class="text-base my-8">
-                        Dekorasi <br> Rias + Busana <br> Acara <br> Dokumentasi
-                    </p>
-                    <a class="py-2 px-3 text-xs bg-[#8F1F1F] hover:opacity-90 ease-in text-white text-base font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" href="detail-makeup.html">
-                        Detail
-                    </a>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="container mx-auto md:mx-auto mb-4 pt-0 mt-0">
-        <div class="box-content h-full w-full bg-[#ebe1e1] p-6">
-            <p class="text-base font-medium mb-4">
-                Ketentuan pemesanan :
-            </p>
-            <ol class="list-decimal list-inside font-medium">
-                <li>Booking tanggal wajib DP 1 juta via Transfer atau Langsung</li>
-                <li>Jika terjadi pembatalan sepihak, maka DP tidak dapat kembali</li>
-                <li>Pelunasan dilakukan setelah acara maksimal H+7</li>
-                <li>Diperbolehkan merubah tanggal acara melalui konsultasi terlebih dahulu</li>
-                <li>Paket wedding dapat disesuaikan sesuai kebutuhan melalui konsultasi</li>
-            </ol>
-        </div>
-    </div>
-    <div class="bg-[#ebe1e1]">
-        <div class="container mx-auto md:mx-auto pt-3 pb-4">
-            <div class="flex">
-                <div class="grow text-center">
-                    <div class="iframe-rwd">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.487192090354!2d109.1995940143899!3d-7.411205994652834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e3b16798e8b%3A0x40bdd56fe957dad6!2sTamara%20Wedding%20Purwokerto%20(isnan_khan)!5e0!3m2!1sen!2sid!4v1661002232058!5m2!1sen!2sid"
-                            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="grow">
-                    <div class="box-content h-fit w-fit pl-6 pr-12">
-                        <p class="text-4xl font-medium mb-2 text-[#8F1F1F]" style="font-family: Katibeh;">
-                            Contact :
-                        </p>
-                        <p class="text-base font-normal">
-                            +62112629492 (Admin)
-                        </p>
-                    </div>
-                </div>
-                <div class="grow">
-                    <div class="box-content h-fit w-fit px-6">
-                        <p class="text-4xl font-medium mb-2 text-[#8F1F1F]" style="font-family: Katibeh;">
-                            Location :
-                        </p>
-                        <p class="text-base font-normal">
-                            Jalan Kertawibawa RT 03/RW 04 Dusun 1, Pasir Kidul, Kecamatan Purwokerto Barat, Kabupaten Banyumas, Jawa Tengah (53135)
-                        </p>
-                    </div>
+    </nav>
 
+    <section class="home mt-0">
+        <div class="container">
+            <h1 class="text-center">
+                Package
+            </h1>
+            <p class="text-center">Tamara Wedding</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Gold</h5>
+                                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
+                                    <ol class="list-unstyled">
+                                        <li>Dekorasi</li>
+                                        <li>Rias + Busana</li>
+                                        <li>Acara</li>
+                                        <li>Dokumentasi</li>
+                                    </ol>
+                                    <a href="#" class="card-link btn btn-primary btn-sm">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Platinum</h5>
+                                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
+                                    <ul class="list-unstyled">
+                                        <li>Dekorasi</li>
+                                        <li>Rias + Busana</li>
+                                        <li>Acara</li>
+                                        <li>Dokumentasi</li>
+                                    </ul>
+                                    <a href="#" class="card-link btn btn-primary btn-sm">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Silver</h5>
+                                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
+                                    <ul class="list-unstyled">
+                                        <li>Dekorasi</li>
+                                        <li>Rias + Busana</li>
+                                        <li>Acara</li>
+                                        <li>Dokumentasi</li>
+                                    </ul>
+                                    <a href="#" class="card-link btn btn-primary btn-sm">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Gedung</h5>
+                                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
+                                    <ul class="list-unstyled">
+                                        <li>Dekorasi</li>
+                                        <li>Rias + Busana</li>
+                                        <li>Acara</li>
+                                        <li>Dokumentasi</li>
+                                    </ul>
+                                    <a href="#" class="card-link btn btn-primary btn-sm">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Tamara</h5>
+                                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
+                                    <ul class="list-unstyled">
+                                        <li>Dekorasi</li>
+                                        <li>Rias + Busana</li>
+                                        <li>Acara</li>
+                                        <li>Dokumentasi</li>
+                                    </ul>
+                                    <a href="#" class="card-link btn btn-primary btn-sm">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Make Up</h5>
+                                    <hr class="border-2 mx-8 my-2 rounded-lg border-[#8F1F1F]">
+                                    <ul class="list-unstyled">
+                                        <li>Dekorasi</li>
+                                        <li>Rias + Busana</li>
+                                        <li>Acara</li>
+                                        <li>Dokumentasi</li>
+                                    </ul>
+                                    <a href="#" class="card-link btn btn-primary btn-sm">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="h4">
+                        Ketentuan Pemesanan
+                    </p>
+                    <ol style="list-style: decimal;" class="pl-3">
+                        <li>Booking tanggal wajib DP 1 juta via transfer atau langsung</li>
+                        <li>Jika terjadi pembatalan sepihak, maka DP tidak dapat kembali</li>
+                        <li>Pelunasan dilakukan setelah acara maksimal H+7</li>
+                        <li>Diperbolehkan merubah tanggal acara melalui konsultasi terlebih dahulu</li>
+                        <li>Paket wedding dapat disesuaikan sesuai kebutuhan melalui konsultasi</li>
+                    </ol>
                 </div>
             </div>
         </div>
-    </div>
-    <style>
-        .top-100 {
-            animation: slideDown 0.5s ease-in-out;
-        }
-        
-        @keyframes slideDown {
-            0% {
-                top: -50%;
-            }
-            100% {
-                top: 0;
-            }
-        }
-        
-        * {
-            outline: none !important;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -webkit-tap-highlight-color: transparent;
-        }
-    </style>
-    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js "></script>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script> -->
+
     <script>
-        const MenuHandler = (flag) => {
-            if (flag) {
-                document.getElementById("list ").classList.add("top-100 ");
-                document.getElementById("list ").classList.remove("hidden ");
-                document.getElementById("close ").classList.remove("hidden ");
-                document.getElementById("open ").classList.add("hidden ");
-            } else {
-                document.getElementById("list ").classList.remove("top-100 ");
-                document.getElementById("list ").classList.add("hidden ");
-                document.getElementById("close ").classList.add("hidden ");
-                document.getElementById("open ").classList.remove("hidden ");
-            }
-        };
+        var elms = document.getElementsByClassName('splide');
+
+        for (var i = 0; i < elms.length; i++) {
+            new Splide(elms[i]).mount();
+        }
     </script>
 </body>
 
